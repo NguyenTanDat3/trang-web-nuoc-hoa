@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin Giám đốc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .profile {
+
+            display: flex;
+            width: 70%;
+            margin: auto;
+            background: linear-gradient(#5f76ed, #b3d6ed);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .avata {
+            width: 40%;
+            text-align: center;
+            float: left;
+            margin-left: 5%;
+        }
+
+        .avata img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 300px;
+            border-radius: 50%;
+            border: #fff solid 5px;
+        }
+
+        .content {
+            padding-top: 20px;
+            width: 40%;
+           float: left;
+           margin: auto;
+            margin-top: 30px;
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .content b {
+            font-size: 30px;
+            text-shadow: 1px 0px 3px black
+        }
+
+        .lienhe {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+        }
+
+        .lienhe div {
+            font-size: 18px;
+            width: 150px;
+            padding: 14px;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 10px;
+            
+        }
+
+        .lienhe a {
+            text-decoration: none;
+            color: black;
+        }
+        .lienhe div:hover
+        {
+            background-color: #e6e7ec;
+        }
+        .top {
+            position: absolute;
+            top: 60px;
+            left: 20px;
+        }
+
+        .top i {
+            font-size: 30px;
+            color: black;
+
+        }
+
+        .top div {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        #header1 {
+            height: 100px;
+
+            background-color: black;
+
+        }
+
+        .divPageF {
+            width: 24%;
+            font-size: 11px;
+            height: auto;
+            float: left;
+            color: black;
+
+        }
+
+        .divPageF a {
+
+            text-decoration: none;
+            color: black;
+        }
+
+        .logoAB {
+            height: 70px;
+            padding-top: 15px;
+            padding-left: 80px;
+            float: left;
+        }
+
+        .giohang {
+            height: 70px;
+
+            padding-top: 15px;
+            padding-right: 30px;
+        }
+
+        .canhan {
+            height: 50px;
+
+            padding-bottom: 12px;
+            padding-right: 80px;
+        }
+
+        .linkgiohang {
+            float: left;
+
+            margin-left: 20%;
+
+        }
+
+        .linkgiohang a i {
+
+            color: gold;
+            margin-left: 80px;
+            float: left;
+            font-size: 30px;
+            margin-top: 35px;
+        }
+
+        .timkiem {
+            width: 25%;
+            float: left;
+            height: 23px;
+            margin-top: 33px;
+            margin-left: 200px;
+
+        }
+
+        .timkiem input {
+
+            padding: 6px;
+            width: 100%;
+
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width:420px) and (min-width:360px) {
+            #header1 {
+                height: 50px;
+
+                background-color: black;
+                display: block;
+            }
+
+            .logoAB {
+                height: 40px;
+                padding-left: 0px;
+                padding-bottom: 5px;
+                padding-top: 10px;
+            }
+
+            .linkgiohang {
+                margin-left: 5%;
+
+            }
+
+            .linkgiohang a i {
+                margin-left: 10px;
+                float: left;
+                font-size: 20px;
+                margin-top: 15px;
+            }
+
+            .timkiem {
+                width: 30%;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            
+            .profile {
+                margin-top: 30px;
+                width: 80%;
+                border-radius: 5px;
+                display:table;
+            }
+            .avata
+            {
+                width: 100%;
+                margin: auto;
+                float: none;
+            }
+            .avata img {
+                width: 180px;
+            }
+
+            .content b {
+                font-size: 20px;
+            }
+
+            .content {
+                margin-top: 0px;
+                font-size: 15px;
+                width: 100%;
+                float: none;
+            }
+
+            .lienhe {
+                margin-top: 30px;
+            }
+
+            .lienhe div {
+                font-size: 14px;
+                width: 80px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .top {
+                top: 40px;
+                left: 10px;
+            }
+
+            .top i {
+                font-size: 20px;
+            }
+            .lienhe
+            {
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header1">
+        <div>
+            <a href="index.html"><img class="logoAB" src="logoAB.webp" alt=""></a>
+        </div>
+        <div class="timkiem">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        </div>
+        <div class="linkgiohang">
+            <a href="GioHang.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            <a href="DangKy.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+
+    <div class="profile">
+
+        <div class="avata"><img src="avatar.webp" alt=""></div>
+        <div class="content"><b>Nguyễn Tấn Đạt</b><br><br> Bùi Thị Xuân, Tân Bình <br> <br>Giám đốc công ty nước hoa nổi
+            tiếng nhất Việt Nam
+            <div class="lienhe">
+                <a href="">
+                    <div>Liên hệ</div>
+                </a>
+                <a href="">
+                    <div>Kết bạn</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="top">
+            <div> <a href=""><i class="fa-brands fa-facebook"></i></a></div>
+            <div><a href=""><i class="fa-brands fa-google"></i></a></div>
+            <div><a href=""><i class="fa-brands fa-tiktok"></i></a></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
